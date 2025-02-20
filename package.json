@@ -1,5 +1,5 @@
 {
-  "name": "joef",
+  "name": "2rarria",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,5 +10,13 @@
   "description": "My first electron proejct",
   "devDependencies": {
     "electron": "^34.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pzahutdwg/2Rarria.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pzahutdwg/2Rarria/issues"
+  },
+  "homepage": "https://github.com/pzahutdwg/2Rarria#readme"
 }
