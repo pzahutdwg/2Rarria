@@ -13,7 +13,8 @@ app.whenReady().then(() => {
     createWindow()
 })
 
-Menu.setApplicationMenu(null);
+// Menu.setApplicationMenu(null);
+//! UNDO THIS LATER
 
 app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') app.quit()
