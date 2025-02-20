@@ -1,0 +1,14 @@
+{
+  "name": "joef",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Truit Elwell",
+  "license": "ISC",
+  "description": "My first electron proejct",
+  "devDependencies": {
+    "electron": "^34.2.0"
+  }
+}

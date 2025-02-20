@@ -1,0 +1,29 @@
+# Node modules (dependencies)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build directories
+dist/
+out/
+build/
+
+# Compiled files
+*.log
+*.lock
+
+# System-specific files
+.DS_Store
+Thumbs.db
+
+# Electron cache & temp files
+electron/dist/
+electron-out/
+electron-cache/
+
+# Environment variables (secrets)
+.env
+
+#Thank you, ChatGPT (All on my own below)
+
+.vs/
