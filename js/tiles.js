@@ -13,5 +13,10 @@ const tileInfo = {
         name: "Stone",
         texture: "stone.png",
         solid: true
+    },
+    "-1": {
+        name: "Test",
+        texture: "test.png",
+        solid: true
     }
 }
