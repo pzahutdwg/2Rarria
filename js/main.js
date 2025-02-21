@@ -13,5 +13,20 @@ function gameLoop() {
     requestAnimationFrame(gameLoop);
 }
 
-let world = generate(0, 0)
+//Key handling
+let keys = []
+document.addEventListener('keydown', (e) => {
+
+    if (!keys.includes(e.key)) {
+        keys.push(e.key)
+        console.log(keys)
+    }
+
+})
+document.addEventListener('keyup', (e) => {
+    keys.splice(keys.indexOf(e.key))
+    console.log(keys)
+})
+
+let world = generate(100, 100)
 gameLoop()
