@@ -9,5 +9,3 @@ random generation
 and structures (stucture maker)
 
 sprites? (duh)
-
-(tx for texture)

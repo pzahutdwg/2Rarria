@@ -6,15 +6,12 @@ window.addEventListener('resize', () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 });
-onreseize = () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-}
 
 function gameLoop() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    drawTileMap();
+    drawTiles();
     requestAnimationFrame(gameLoop);
 }
 
+let world = generate(0, 0)
 gameLoop()
