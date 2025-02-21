@@ -13,7 +13,7 @@ function drawTileMap() {
         for (let col = 0; col < tileMap[row].length; col++) {
             const tile = tileMap[row][col];
             let img = new Image();
-            img.src = "img/texture/" + tileInfo[tile].texture
+            img.src = "img/texture/" + tiles[tile].texture
             ctx.drawImage(img, tileSize, tileSize, tileSize, tileSize, tileSize * col, tileSize * row, tileSize, tileSize);
         }
     }

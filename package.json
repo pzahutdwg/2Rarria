@@ -1,22 +1,23 @@
 {
   "name": "2rarria",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "start": "electron ."
-  },
-  "author": "Truit Elwell",
-  "license": "ISC",
   "description": "My first electron proejct",
-  "devDependencies": {
-    "electron": "^34.2.0"
+  "homepage": "https://github.com/pzahutdwg/2Rarria#readme",
+  "bugs": {
+    "url": "https://github.com/pzahutdwg/2Rarria/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pzahutdwg/2Rarria.git"
   },
-  "bugs": {
-    "url": "https://github.com/pzahutdwg/2Rarria/issues"
+  "license": "ISC",
+  "author": "Truit Elwell",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
   },
-  "homepage": "https://github.com/pzahutdwg/2Rarria#readme"
+  "devDependencies": {
+    "electron": "^34.2.0"
+  }
 }

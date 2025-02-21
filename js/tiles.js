@@ -1,4 +1,4 @@
-const tileInfo = {
+const tiles = {
     "0": {
         name: "Air",
         texture: "air.png",
