@@ -7,7 +7,7 @@ function drawTiles() {
             const tile = world[row][col];
             let img = new Image();
             img.src = "img/texture/" + tiles[tile].texture
-            ctx.drawImage(img, tileSize, tileSize, tileSize, tileSize, (tileSize * col - cameraX) * scale, (tileSize * row - cameraY) * scale, tileSize * scale, tileSize * scale);
+            ctx.drawImage(img, tileSize, tileSize, tileSize,  tileSize, (tileSize * col - cameraX) * scale, (tileSize * row - cameraY) * scale, tileSize * scale, tileSize * scale);
             //draw image (img,  startx ,  starty , cutwidth, cutheight,           x                      ,            y                      , width           ,      height     )
             //! Don't forget to change for camera movement!
         }
