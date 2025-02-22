@@ -7,26 +7,37 @@ window.addEventListener('resize', () => {
     canvas.height = window.innerHeight;
 });
 
-function gameLoop() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    drawTiles();
-    requestAnimationFrame(gameLoop);
-}
 
 //Key handling
 let keys = []
 document.addEventListener('keydown', (e) => {
-
+    
     if (!keys.includes(e.key)) {
         keys.push(e.key)
         console.log(keys)
     }
-
+    
 })
 document.addEventListener('keyup', (e) => {
     keys.splice(keys.indexOf(e.key))
     console.log(keys)
 })
 
-let world = generate(100, 100)
+// Game Loop
+function gameLoop() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    camera();
+    drawTiles();
+    
+    requestAnimationFrame(gameLoop);
+}
+
+// Reset variables
+//! Change camera later
+let cameraX = 0
+let cameraY = 0
+let scale = 1
+
+let world = generate(10, 10)
 gameLoop()
