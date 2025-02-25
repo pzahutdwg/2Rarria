@@ -3,3 +3,6 @@ individual files for each
 each tile (1/9) is 16x16px (48x48 per file)
 
 find "//!" To see if we missed something
+
+npm install --save-dev electron
+^   Electron install script   ^
