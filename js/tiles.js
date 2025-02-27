@@ -1,4 +1,9 @@
 const tiles = {
+    "-1": {
+        name: "Test",
+        texture: "test.png",
+        solid: true
+    },
     "0": {
         name: "Air",
         texture: "air.png",
@@ -12,11 +17,6 @@ const tiles = {
     "2": {
         name: "Stone",
         texture: "stone.png",
-        solid: true
-    },
-    "-1": {
-        name: "Test",
-        texture: "test.png",
         solid: true
     }
 }

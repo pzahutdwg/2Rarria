@@ -1,4 +1,5 @@
 function generate(width, height) {
+    generating = true
     // Do this later, for now:
     let tileMap = []
     for (let i = 0; i < height; i++) {
@@ -7,7 +8,7 @@ function generate(width, height) {
             tileMap[i].push(Math.floor(Math.random() * 3));
         }
     }
-
+    generating = false
     return tileMap;
 }
 
@@ -55,3 +56,6 @@ function coPilotGenerate(width, height) {
 }
 
 // MY generate code (WIP)
+function generate2(width, height){
+
+}

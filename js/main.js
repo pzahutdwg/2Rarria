@@ -14,18 +14,20 @@ document.addEventListener('keydown', (e) => {
     
     if (!keys.includes(e.key)) {
         keys.push(e.key)
-        console.log(keys)
     }
     
 })
 document.addEventListener('keyup', (e) => {
     keys.splice(keys.indexOf(e.key))
-    console.log(keys)
 })
 
 // Game Loop
+//! Make it stop flickering?
 function gameLoop() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    if (generating) {
+        ctx.fillRect(0, 0, 100, 100)
+    }
 
     camera();
     drawTiles();
@@ -39,6 +41,8 @@ let cameraX = 0
 let cameraY = 0
 let scale = 1
 
-//! coPilotGenerate() does NOT work with larger numbers
-let world = generate(100, 100)
+let generating = false
+
+//! coPilotGenerate() does NOT work
+let world = generate(100, 500)
 gameLoop()
