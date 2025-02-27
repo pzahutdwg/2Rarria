@@ -39,5 +39,6 @@ let cameraX = 0
 let cameraY = 0
 let scale = 1
 
-let world = generate(10, 10)
+//! coPilotGenerate() does NOT work with larger numbers
+let world = generate(100, 100)
 gameLoop()
