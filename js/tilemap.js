@@ -17,7 +17,7 @@ function getCol() {
 
 function drawTiles() {
     for (let row = 0; row < getMaxHeight() + getRow() + 1; row++) {
-        console.log(getMaxWidth())
+        console.log(getRow())
         for (let col = getCol(); col < getMaxWidth() + getCol() + 1; col++) {
             console.log(getCol())
             const tile = world[row][col];

@@ -8,7 +8,8 @@ const createWindow = () => {
 
     win.loadFile('index.html')
 }
-
+// This is supposed to disable the flickering, idk if it works.
+app.disableHardwareAcceleration();
 app.whenReady().then(() => {
     createWindow()
 })

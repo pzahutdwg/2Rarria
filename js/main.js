@@ -44,5 +44,5 @@ let scale = 1
 let generating = false
 
 //! coPilotGenerate() does NOT work
-let world = generate(100, 500)
+let world = generate(1000, 1000)
 gameLoop()
